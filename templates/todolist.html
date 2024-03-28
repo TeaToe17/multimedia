@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Todo page</h1>
+    <h1>Record a Task</h1>
+    {% for task in tasks %}
+    <div id="tasks">
+      <span>{{task.task}}</span>
+      <a href="{% url 'taskdelete' event=task.id %}"> Delete </a>
+      <a href="{% url 'taskedit' event=task.id %}"> Edit </a>
+    </div>
+    {% endfor%}
+    <br />
+    <div class="addtaskbtn">
+      <a href="{% url 'addtask' %}">Add a task</a>
+    </div>
+  </body>
+
+  <script></script>
+</html>

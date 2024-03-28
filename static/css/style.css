@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(42, 41, 41);
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  color: rgb(82, 115, 115);
+  display: flex-col;
+  justify-content: center;
+  align-items: center;
+}
+
+#tasks {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  span {
+    min-width: 50%;
+  }
+}
+
+a {
+  color: rgb(82, 115, 115);
+  text-decoration: none;
+}
+
+.addtaskbtn {
+  background-color: rgb(31, 55, 47);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: None;
+  width: fit-content;
+}
