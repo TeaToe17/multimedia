@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 
 
+# from ..todolistapp import views
+
 from . import views
 
 urlpatterns = [
